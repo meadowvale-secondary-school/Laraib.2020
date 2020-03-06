@@ -10,7 +10,7 @@
  - Numbers like `101` and `-10`
  */
 let string = "I am a string"
-let number = 121
+let number = 12
 //: You’ve also seen that these types behave differently. What happens when, for example, you add them together?
 1 + 1 // Equals 2
 "1" + "1" // Equals "11"
