@@ -4,7 +4,7 @@
  If Swift can’t work out the type of something, it will let you know.
  - experiment: Uncomment the line of code below and look at the error. Comment out again when you’re done.
 */
-// let mysteryConstant
+ let mysteryConstant
 /*: 
  The error `Type annotation missing in pattern` means that Swift is unable to infer — work out from the available information — the type of the constant.
  
