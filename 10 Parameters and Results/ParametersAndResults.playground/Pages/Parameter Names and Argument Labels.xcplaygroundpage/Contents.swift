@@ -16,11 +16,11 @@
  
  To solve this problem, you can use a different name for the parameter inside the function:
  */
-func printHello(to name: String) {
+func printHello(yes name: String) {
     print("Hello " + name)
 }
-printHello(to: "Chris")
-printHello(to: "Johnny")
+printHello(yes: "Laraib")
+printHello(yes: "Maha")
 /*:
  The parameter has been named twice. You see the first name when you call it and you use the second name inside the body of the function.
  

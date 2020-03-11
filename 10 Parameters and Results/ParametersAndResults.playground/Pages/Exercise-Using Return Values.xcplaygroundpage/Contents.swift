@@ -6,9 +6,10 @@
  The function `impossibleBeliefsCount` takes several numbers of reported unlikely incidents. It then prints the number of impossible things to be believed:
 */
 func impossibleBeliefsCount(pigsFlying: Int, frogsBecomingPrinces: Int, multipleLightningStrikes: Int) {
-    let total = pigsFlying + frogsBecomingPrinces + multipleLightningStrikes
-    print(total)
+    return pigsFlying + frogsBecomingPrinces + multipleLightningStrikes
 }
+let total = impossibleBeliefsCount
+print(total)
 //: - callout(Exercise):Update the `impossibleBeliefsCount` function so that instead of printing the value, it returns it as an `Int`.
 //:
 //: `impossibleThingsPhrase` creates a phrase using string interpolation:
