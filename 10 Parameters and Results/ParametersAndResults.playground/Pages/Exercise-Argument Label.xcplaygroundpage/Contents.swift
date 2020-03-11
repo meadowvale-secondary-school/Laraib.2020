@@ -3,7 +3,7 @@
 
  Functions and their arguments should be named so that they read like a clear instruction when they’re called. To make this easier, you can give parameters two names - an _argument label_ to be used when calling the function and a _parameter name_ to be used within the function’s body.
 */
-func score(wit Reds: Int, greens: Int, golds: Int) -> Int {
+func score(withReds: Int, greens: Int, golds: Int) -> Int {
     let pointsPerRed = 5
     let pointsPerGreen = 10
     let pointsPerGold = 30
