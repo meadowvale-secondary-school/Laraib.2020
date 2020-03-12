@@ -9,7 +9,7 @@ if videoLength >= 5 {
     "That's lovely."
 }
 
-if videoLength < 5 {
+if videoLength <= 5 {
     "If I blinked, I'd miss it."
 }
 //: What you really want is to be able to say “If the value is less than 5, do this; otherwise, do something else”. You can do that with the `else` keyword:
