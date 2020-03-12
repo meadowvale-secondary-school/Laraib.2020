@@ -22,15 +22,26 @@ func isLeapYear(_ year: Int) -> Bool {
         return false
     }
 }
+ 
+year % 4
+ year%100 not 0  false
+ is 0 return true
+ is 400 retuyrn true
+ not false
 */
 func isLeapYear(year :Int) -> Bool {
     if year % 4 == 0{
         if year % 100 != 0{
+                return true
             if year % 400 == 0{
                 return true
+            }else{
+                return false
             }
+        }else {
+            return false
         }
-    } else{
+    }else{
         return false
     }
 }
