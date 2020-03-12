@@ -23,25 +23,35 @@ func isLeapYear(_ year: Int) -> Bool {
     }
 }
  
-year % 4
- year%100 not 0  false
- is 0 return true
- is 400 retuyrn true
- not false
+
 */
-func isLeapYear(year :Int) -> Bool {
-    if year % 100 == 0 && year % 400 != 0 {
-        return false
-    }else{
+
+// - Is the year divisible by 4?
+func isLeapYear(year:Int) -> Bool{
+    // - Is the year divisible by 4?
+    if year % 4 == 0 {
+      // - If so, is the year divisible by 100?
+      if year % 100 != 0 {
+        // - If not, it is a leap year.
         return true
+      } else {
+        // - If so, is the year divisible by 400?
+        if year % 400 != 0 {
+          // - If not, it is **not** a leap year.
+          return false
+        } else {
+          // - If so, it is a leap year.
+          return true
+        }
+      }
+    } else {
+      // <Nothing is really said about this condition!>
+      return false
     }
 }
 
-    
-    
-    
-    
-    
+
+
 // Should be true
 isLeapYear(year: 2000)
 // Should be false
