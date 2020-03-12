@@ -9,6 +9,7 @@
 */
 //"banana" + 1
 //2 + "2"
+
 /*:
  You'll see errors like this:
  
@@ -22,7 +23,9 @@
  
  - callout(Exercise): Write some more incorrect addition statements. Before you write each line, try to guess what errors will be produced. Remember to comment out the lines of code from the earlier experiment first.
  */
-
+"fourty four" + 44
+4 + 4 + "4"
+4.123 + "four point one two three"
 
 
 

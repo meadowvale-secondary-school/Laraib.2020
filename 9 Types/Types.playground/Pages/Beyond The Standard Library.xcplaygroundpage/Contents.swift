@@ -17,3 +17,4 @@
  
 [Previous](@previous)  |  page 10 of 13  |  [Next: Importing Frameworks](@next)
 */
+TrainingShoe = 12, "Nike", "released 2014", "$150"
