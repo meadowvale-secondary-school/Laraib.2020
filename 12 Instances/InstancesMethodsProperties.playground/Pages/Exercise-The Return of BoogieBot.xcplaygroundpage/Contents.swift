@@ -13,8 +13,8 @@ let stage = BoogieStage()
 //: The stage can record the dancing that happens on it:
 stage.startRecording()
 //: Give each bot a name:
-leftBot.botName = "Lefty"
-rightBot.botName = "Righty"
+leftBot.botName = "laraib"
+rightBot.botName = "rob"
 //: Then put them on stage:
 stage.leftBot = leftBot
 stage.rightBot = rightBot
@@ -36,7 +36,16 @@ rightBot.shakeItCenter()
 rightBot.leftLegUp()
 rightBot.leftLegDown()
 
+leftBot.fabulize()
+leftbot.rightLegUp()
+leftbot.leftArmUp()
+leftbot.shakeItCenter()
 
+rightBot.fabulize()
+rightbot.shakeItLeft()
+rightbot.leftArmUp()
+rightbot.leftArmDown
+rightBot.shakeItCenter()
 
 
 
