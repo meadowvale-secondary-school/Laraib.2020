@@ -6,7 +6,8 @@ func responseTo(question: String) -> String {
     let lowerQuestion = question.lowercased()
     if lowerQuestion == "hello there"{
         return "Why, hello there!"
-        
+    } else if lowerQuestion.hasPrefix("hello") {
+        return "Hi, there!"
     } else {
         let defaultNumber = question.count % 2
         
@@ -14,6 +15,8 @@ func responseTo(question: String) -> String {
             return "To the North!"
         } else if defaultNumber == 0 {
             return "In the cookie jar!"
+        }else{
+            return "I have no Idea"
         }
     }
 }
@@ -22,7 +25,7 @@ responseTo(question: "Hello there")
 responseTo(question: "hello there")
 //: 👇These answers should be “To the North!”
 responseTo(question: "Where should I go on holiday?")
-responseTo(question: "where can I find the North Pole?")
+responseTo(question: "where can I find the North Polee?")
 //: 👇This answer should be “In the cookie jar!”
 responseTo(question: "Where are the cookies?")
 /*: 
