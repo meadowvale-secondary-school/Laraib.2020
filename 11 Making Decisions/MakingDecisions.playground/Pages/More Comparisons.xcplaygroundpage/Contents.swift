@@ -39,8 +39,9 @@
 
  - callout(Exercise): Practice writing out some comparison statements of your own. What happens if you try to compare non-integer types, like doubles or strings?
 */
-
-
+4.99 > 5.00
+"Laraib" <= "maha"
+"rt" >= "lom"
 
 
 //: Learn how to add decision points to your code on the next page.
