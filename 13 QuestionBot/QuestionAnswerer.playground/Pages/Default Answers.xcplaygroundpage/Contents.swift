@@ -26,7 +26,7 @@ func responseTo(question: String) -> String {
         
         if defaultNumber == 0 {
             return "That really depends"
-        } else if defaultNumber2 == 1 {
+        } else if defaultNumber2 == 2{
             return "maybe"
         } else {
             return "Ask me tomorrow"

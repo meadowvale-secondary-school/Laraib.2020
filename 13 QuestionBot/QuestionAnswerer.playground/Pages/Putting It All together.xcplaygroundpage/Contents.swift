@@ -3,7 +3,19 @@
  - callout(Exercise): In this final exercise you’ll combine the things you’ve learned over the last few pages. Update this `responseToQuestion` function so that it gives the answers specified below. It’s OK to go back and look and code from earlier pages.
 */
 func responseTo(question: String) -> String {
-    return "?"
+    let lowerQuestion = question.lowercased()
+    if lowerQuestion == "hello there"{
+        return "Why, hello there!"
+        
+    } else {
+        let defaultNumber = question.count % 2
+        
+        if defaultNumber == 1 {
+            return "To the North!"
+        } else if defaultNumber == 0 {
+            return "In the cookie jar!"
+        }
+    }
 }
 //: 👇These answers should be “Why, hello there!”
 responseTo(question: "Hello there")
