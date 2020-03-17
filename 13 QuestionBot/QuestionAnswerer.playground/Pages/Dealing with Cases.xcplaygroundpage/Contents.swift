@@ -15,9 +15,9 @@
  ```
  Instead, it’s better to change the case of the text before you try to match it, using the `lowercased` method:
 */
-let question = "WHERE ARE THE COOKIES?"
-let lowerQuestion = question.lowercased()
-lowerQuestion.hasPrefix("where")
+//let question = "WHERE ARE THE COOKIES?"
+//let lowerQuestion = question.lowercased()
+//lowerQuestion.hasPrefix("where")
 //: - callout(Exercise): Rewrite the function below to work with aNy cAsE of QueStiOn TeXT, so you get a correct answer in the example:
 func responseTo(question: String) -> String {
     
@@ -28,5 +28,6 @@ func responseTo(question: String) -> String {
     }
 }
 
-responseTo(question: "Hello!")
-//:[Previous](@previous)  |  page 3 of 7  |  [Next: Special Questions](@next)
+let question1 = "Hello"
+let lowerQuestion = question1.lowercased()
+responseTo(question:lowerQuestion)

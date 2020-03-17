@@ -22,18 +22,21 @@ func responseTo(question: String) -> String {
     } else {
         
         let defaultNumber = question.count % 2
+        let defaultNumber2 = question.count % 3
         
         if defaultNumber == 0 {
             return "That really depends"
+        } else if defaultNumber2 == 1 {
+            return "maybe"
         } else {
-            return "Ask me again tomorrow"
+            return "Ask me tomorrow"
         }
-        
     }
 }
-responseTo(question: "Where are the cookies?")
-responseTo(question: "Can I have a cookie?")
-responseTo(question: "PLEASE can I have a cookie?")
+print(responseTo(question: "Where are the cookies?"))
+print(responseTo(question: "Can I have a cookie?"))
+print(responseTo(question: "PLEASE can I have a cookie?"))
+
 /*:
  - callout(Exercise): Amend the function above to choose from one of three default answers instead of two.
  
