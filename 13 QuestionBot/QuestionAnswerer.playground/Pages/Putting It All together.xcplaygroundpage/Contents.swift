@@ -8,10 +8,15 @@ func responseTo(question: String) -> String {
         return "Why, hello there!"
     } else if lowerQuestion.hasPrefix("hello") {
         return "Hi, there!"
+    }else if lowerQuestion.hasPrefix("can I") {
+        return "Sure why not!"
+        
     } else {
         let defaultNumber = question.count % 2
-        
-        if defaultNumber == 1 {
+        if lowerQuestion.hasPrefix("should"){
+            return "I don't know, can you?"
+            
+        }else if defaultNumber == 1 {
             return "To the North!"
         } else if defaultNumber == 0 {
             return "In the cookie jar!"
