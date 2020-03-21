@@ -19,11 +19,11 @@ let weight3 = 1200
 var strongerRope = TreehousePulley(weightCapacity: 2000)
 var ricketyRope = TreehousePulley(weightCapacity: 200)
 
-TreehousePulley.addLoadToBasket(weight1*3)
-TreehousePulley.addLoadToBasket(weight2*2)
-TreehousePulley.addLoadToBasket(weight3)
+ricketyRope.addLoadToBasket(loadWeight: weight1*3)
+strongerRope.addLoadToBasket(loadWeight: weight2*2)
+strongerRope.addLoadToBasket(loadWeight: weight3)
 
-TreehousePulley.canHandleAdditionalLoad
+strongerRope.canHandleAdditionalLoad(weight1)
 /*:
  - callout(Exercise):
  Use the `TreehousePulley` type's `addLoadToBasket` method to add the items you defined above. Add three of the lightest item, two of the middle-weight item, and one of the heaviest item. Add the items to the lightweight pulley first, using the `canHandleAdditionalLoad` method to check whether the item would overload the pulley, then move on to your stronger pulley when the first is fully loaded.\

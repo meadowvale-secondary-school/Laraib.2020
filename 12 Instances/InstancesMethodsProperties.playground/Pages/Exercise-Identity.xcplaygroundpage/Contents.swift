@@ -10,13 +10,13 @@ Below the declaration of `friendPlans`, update `myPlans` by using the addition o
 Check the values of `myPlans` and `friendPlans`. Are they the same or different?
  */
 // Create your variables here:
-var = myPlans
-var = friendPlans.myPlans()
+var myPlan = "Going out with friends"
+var friendPlan = myPlan
+
 
 
 // Update `myPlans` here:
-myPlans + "playing soccer"
-
+myPlan = "Reading a book"
 /*:
  - callout(Exercise):
  Create a function `addDance` that takes a string, appends a phrase about dancing (like `"and then we dance!"` or `"but no dancing"`, according to your taste), and returns the new string.\
@@ -24,20 +24,19 @@ Call the `addDance` function on `myPlans`, and assign the result to `friendPlans
  */
 // Define and call your function here:
 func addDance(phrase: String) -> String {
-    return phrase += "and then we dance!"
+    return phrase + " and then we dance!"
 }
 
-myPlans.addDance()
-friendPlans.addDance()
-
+//addDance(phrase: "I go to the bar")
+myPlan = addDance(phrase: myPlan)
 /*:
  - callout(Exercise):
  How do you expect `friendPlans` to change? How do you expect `myPlans` to change?\
  Print both instances to to find out.
  */
 // Check your guess by printing here:
-print(friendPlans)
-print(myPlans)
+print(friendPlan)
+print(myPlan)
 
 
 /*:

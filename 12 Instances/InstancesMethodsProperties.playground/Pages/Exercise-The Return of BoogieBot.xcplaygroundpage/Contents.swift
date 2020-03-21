@@ -37,14 +37,14 @@ rightBot.leftLegUp()
 rightBot.leftLegDown()
 
 leftBot.fabulize()
-leftbot.rightLegUp()
-leftbot.leftArmUp()
-leftbot.shakeItCenter()
+leftBot.rightLegUp()
+leftBot.leftArmUp()
+leftBot.shakeItCenter()
 
 rightBot.fabulize()
-rightbot.shakeItLeft()
-rightbot.leftArmUp()
-rightbot.leftArmDown
+rightBot.shakeItLeft()
+rightBot.leftArmUp()
+rightBot.leftArmDown()
 rightBot.shakeItCenter()
 
 
