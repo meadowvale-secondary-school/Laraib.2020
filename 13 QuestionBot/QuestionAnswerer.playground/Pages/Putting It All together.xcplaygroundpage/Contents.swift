@@ -8,17 +8,19 @@ func responseTo(question: String) -> String {
         return "Why, hello there!"
     } else if lowerQuestion.hasPrefix("hello") {
         return "Hi, there!"
-    }else if lowerQuestion.hasPrefix("can I") {
+    }else if lowerQuestion.hasPrefix("can i") {
         return "Sure why not!"
+    }else if lowerQuestion.hasPrefix("what") {
+        return "I am not sure use google.ca"
         
     } else {
-        let defaultNumber = question.count % 2
+        let defaultNumber = question.count % 3
         if lowerQuestion.hasPrefix("should"){
             return "I don't know, can you?"
             
-        }else if defaultNumber == 1 {
+        }else if defaultNumber == 2 {
             return "To the North!"
-        } else if defaultNumber == 0 {
+        } else if defaultNumber == 1{
             return "In the cookie jar!"
         }else{
             return "I have no Idea"
@@ -30,7 +32,7 @@ responseTo(question: "Hello there")
 responseTo(question: "hello there")
 //: 👇These answers should be “To the North!”
 responseTo(question: "Where should I go on holiday?")
-responseTo(question: "where can I find the North Polee?")
+responseTo(question: "where can I find the North Pole?")
 //: 👇This answer should be “In the cookie jar!”
 responseTo(question: "Where are the cookies?")
 /*: 
