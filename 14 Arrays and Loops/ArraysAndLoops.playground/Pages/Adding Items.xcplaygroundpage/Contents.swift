@@ -13,12 +13,12 @@ emptyList.insert("Kumquat", at: 0)
 //: You can append a whole array of items using the compound assignment operator `+=`:
 emptyList += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
+emptyList.append("Dragon Fruit")
 
+emptyList.insert("Kiwi", at: 2)
 
+emptyList += ["Granny Smith Apples", "Honeymelon", "Grapes"]
 
-
-
-
-
+print(emptyList)
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
