@@ -7,7 +7,7 @@
  
  - callout(Exercise): Option-click on the two arrays below and look at their types
 */
-let grades = ["A", "B", "C", "D", "E"]
+let grades = [1, "B", "C", "D", "E"]
 let starRatings = [1, 2, 3, 4, 5]
 /*:
  The `[` and `]` brackets tell you that it's an array type. Between the brackets is the name of the type of elements the array holds.
@@ -21,7 +21,7 @@ let someRating = starRatings[0]
 //: Since arrays always know what kind of element they're holding, you can pull out a single element from that collection and rely on type inference to establish that `someGrade` is a `String` and `someRating` is an `Int`.
 //:
 //: - callout(Exercise): Try setting `anotherGrade` to a number. What happens?
-var anotherGrade = grades[1]
+var anotherGrade = grades[0]
 
 
 //: Next, learn how to work through the values in an array.\
