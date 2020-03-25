@@ -31,15 +31,44 @@ for shouldMascotChangeVotes in shouldMascotChangeVotes {
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
+if yesVote > noVote {
+    print("To whomever voted yes to the mascot changing, you guys have won!")
+} else {
+    print("To whomever voted no to the mascot changing, you guys have won!")
+}
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
+for shouldInstallCoffeeVendingMachineVotes in shouldInstallCoffeeVendingMachineVotes {
+    if shouldInstallCoffeeVendingMachineVotes == true{
+        yesVote += 1
+    } else {
+        noVote += 1
+    }
+}
 
+if yesVote >= noVote {
+    print("To whomever voted yes to installing a coffee vending machine, you guys have won!")
+} else {
+    print("To whomever voted no to installing a coffee vending machine, you guys have won!")
+}
 
+for shouldHaveMorePollOptionsVotes in shouldHaveMorePollOptionsVotes {
+    if shouldHaveMorePollOptionsVotes == true{
+        yesVote += 1
+    } else {
+        noVote += 1
+    }
+}
 
+if yesVote >= noVote {
+    print("To whomever voted yes to having more poll options, you guys have won!")
+} else {
+    print("To whomever voted no to having more poll options, you guys have won!")
+}
 
+// the shouldMascotChangeVotes and shouldHaveMorePollOptionsVotes won by popular votes while shouldInstallCoffeeVendingMachineVotes had a tie
 /*:
  ### Extension:
  Your `for…in` loop would be even more powerful if you could easily reuse it. The easiest way to reuse code is to put it in a function.
@@ -53,8 +82,19 @@ for shouldMascotChangeVotes in shouldMascotChangeVotes {
  */
 // Add your vote-processing function here:
 
+func printResults(forIssue: String, withVotes: Bool) -> String {
+    yesVote = 0
+    noVote = 0
+    if withVotes == true {
+        yesVote += 1
+    } else if withVotes == false{
+        noVote += 1
+    } else {
+        return "/(forIssue)?, /(yesVote) yes, /(noVote) no"
+    }
+}
 
-
+print(printResults(forIssue: "Should we have more poll options?", withVotes: shouldHaveMorePollOptionsVotes))
 
 
 
