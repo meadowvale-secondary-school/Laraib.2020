@@ -36,7 +36,8 @@ if yesVote > noVote {
 } else {
     print("To whomever voted no to the mascot changing, you guys have won!")
 }
-
+yesVote = 0
+noVote = 0
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
@@ -48,11 +49,16 @@ for shouldInstallCoffeeVendingMachineVotes in shouldInstallCoffeeVendingMachineV
     }
 }
 
-if yesVote >= noVote {
+if yesVote > noVote {
     print("To whomever voted yes to installing a coffee vending machine, you guys have won!")
-} else {
+} else if yesVote < noVote {
     print("To whomever voted no to installing a coffee vending machine, you guys have won!")
+} else {
+    print("Look at that, we have a tie! That means we gotta do it again!")
 }
+
+yesVote = 0
+noVote = 0
 
 for shouldHaveMorePollOptionsVotes in shouldHaveMorePollOptionsVotes {
     if shouldHaveMorePollOptionsVotes == true{
@@ -82,19 +88,20 @@ if yesVote >= noVote {
  */
 // Add your vote-processing function here:
 
-func printResults(forIssue: String, withVotes: Bool) -> String {
-    yesVote = 0
-    noVote = 0
-    if withVotes == true {
-        yesVote += 1
-    } else if withVotes == false{
-        noVote += 1
-    } else {
-        return "/(forIssue)?, /(yesVote) yes, /(noVote) no"
+func printResults(forIssue: String, withVotes:[Bool]) -> String {
+    var yesVote = 0
+    var noVote = 0
+    for vote in withVotes {
+        if vote{
+            yesVote += 1
+        } else {
+            noVote += 1
+        }
     }
+    return "\(forIssue)?, \(yesVote) yes, \(noVote) no"
 }
 
-print(printResults(forIssue: "Should we have more poll options?", withVotes: shouldHaveMorePollOptionsVotes))
+print(printResults(forIssue: "Should the Mascot change?", withVotes: shouldMascotChangeVotes))
 
 
 
