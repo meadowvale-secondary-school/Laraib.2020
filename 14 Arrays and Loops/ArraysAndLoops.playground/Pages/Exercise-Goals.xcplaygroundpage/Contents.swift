@@ -5,7 +5,7 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 
  - callout(Exercise): Create an array literal with 20 to 25 items of sample data for your daily activity. It may be something like `let milesBiked = [3, 7.5, 0, 0, 17 ... ]` Feel free to make up or embellish the numbers, but make sure you have entries that are above, below and exactly at the goal you've thought of. _Hint: Make sure to choose the right kind of array for your data, whether `[Double]` or `[Int]`._
 */
-let minExercised = [3, 7,0 ,10, 12, 14, 16, 18, 20, 22, 24,26,28,30,32,34,36,38,40,0, 2,4]
+let minExercised = [3,7,0,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,0,2,4]
 //: - callout(Exercise): Write a function that takes the daily number as an argument and returns a message as a string. It should return a different message based on how close the number comes to your goal. You can be as ambitious and creative as you'd like with your responses, but make sure to return at least two different messages depending on your daily progress!
 // goal is to exercise for 2 hours which is 120 minutes
 func motivation(goals: [Int] ) {
