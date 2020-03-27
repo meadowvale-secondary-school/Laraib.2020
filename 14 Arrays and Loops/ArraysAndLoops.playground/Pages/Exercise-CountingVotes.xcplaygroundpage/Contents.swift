@@ -18,21 +18,63 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
-
+var yesVote = 0
+var noVote = 0
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
-
+for shouldMascotChangeVotes in shouldMascotChangeVotes {
+    if shouldMascotChangeVotes == true{
+        yesVote += 1
+    }else{
+        noVote += 1
+    }
+}
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
-
+if yesVote > noVote {
+    print("To whomever voted yes to the mascot changing, you guys have won!")
+} else {
+    print("To whomever voted no to the mascot changing, you guys have won!")
+}
+yesVote = 0
+noVote = 0
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
+for shouldInstallCoffeeVendingMachineVotes in shouldInstallCoffeeVendingMachineVotes {
+    if shouldInstallCoffeeVendingMachineVotes == true{
+        yesVote += 1
+    } else {
+        noVote += 1
+    }
+}
 
+if yesVote > noVote {
+    print("To whomever voted yes to installing a coffee vending machine, you guys have won!")
+} else if yesVote < noVote {
+    print("To whomever voted no to installing a coffee vending machine, you guys have won!")
+} else {
+    print("Look at that, we have a tie! That means we gotta do it again!")
+}
 
+yesVote = 0
+noVote = 0
 
+for shouldHaveMorePollOptionsVotes in shouldHaveMorePollOptionsVotes {
+    if shouldHaveMorePollOptionsVotes == true{
+        yesVote += 1
+    } else {
+        noVote += 1
+    }
+}
 
+if yesVote >= noVote {
+    print("To whomever voted yes to having more poll options, you guys have won!")
+} else {
+    print("To whomever voted no to having more poll options, you guys have won!")
+}
+
+// the shouldMascotChangeVotes and shouldHaveMorePollOptionsVotes won by popular votes while shouldInstallCoffeeVendingMachineVotes had a tie
 /*:
  ### Extension:
  Your `for…in` loop would be even more powerful if you could easily reuse it. The easiest way to reuse code is to put it in a function.
@@ -46,8 +88,20 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
  */
 // Add your vote-processing function here:
 
+func printResults(forIssue: String, withVotes:[Bool]) -> String {
+    var yesVote = 0
+    var noVote = 0
+    for vote in withVotes {
+        if vote{
+            yesVote += 1
+        } else {
+            noVote += 1
+        }
+    }
+    return "\(forIssue)?, \(yesVote) yes, \(noVote) no"
+}
 
-
+print(printResults(forIssue: "Should the Mascot change?", withVotes: shouldMascotChangeVotes))
 
 
 

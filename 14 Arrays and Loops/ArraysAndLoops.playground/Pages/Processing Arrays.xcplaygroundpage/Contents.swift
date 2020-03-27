@@ -5,7 +5,7 @@
  
  Here’s an array:
 */
-let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
+let friends = ["Laraib", "Hassan", "Armaan", "Andrew", "Usayd"]
 //: Now you can define a function to process each item in the array:
 func invite(friend: String) {
     print("Hey, \(friend), please come to my party on Friday!")
