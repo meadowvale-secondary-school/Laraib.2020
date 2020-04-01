@@ -17,15 +17,14 @@
 // Add your own struct here:
 
 struct MSA {
-    var meadowvaleFalcons = 12
-    var stephenLewisEagles = 8
-    var johnFraserBulls = 4
-    var zagaBulldogs = 1
+    var team: String
+    var winnings = Int
     
-    func final(_ teams: string) -> String{
-        let team1 = meadowvaleFalcons
-        let team2 = zagaBulldogs
-        return "The final game will be held against..... \(team1) and \(team2)!!"
+    func final(_ allTeams: MSA) -> String{
+        var winningTeams = [Array<Any>()]
+        winningTeams += allTeams
+        winningTeams.sort()
+        return "The top team in the league right now is \(winningTeams[0])!!"
     }
     
 }
@@ -37,9 +36,7 @@ struct MSA {
  Use the struct you created to make a new instance of your type.
 
  */
-let mississaugaSecondary.final("Mississauga Secondary")
-
-
+var mississaugaSecondaryTomahawks = MSA(team: "MississaugaSecondary", winnings: 5)
 /*:
  - note: Here's an example of a placeholder type used for making a TrainingShoe:
  */
