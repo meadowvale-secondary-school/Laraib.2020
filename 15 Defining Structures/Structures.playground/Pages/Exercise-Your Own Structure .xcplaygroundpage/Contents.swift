@@ -6,9 +6,8 @@
  Think of another real-world object and its properties. Make up some actions or behaviors that the object might be able to perform. Write them all in plain English first in a comment:
  */
  // Add your English-language description of the type here. Make sure to add // before each line of your comment description.
- //
- //
- //
+ // my struct is about the local basketball, where there are 5 teams, where my struct
+// holds their wins in the first quarter of the league
 
 /*:
  - callout(Exercise):
@@ -17,8 +16,19 @@
  */
 // Add your own struct here:
 
-
-
+struct MSA {
+    var meadowvaleFalcons = 12
+    var stephenLewisEagles = 8
+    var johnFraserBulls = 4
+    var zagaBulldogs = 1
+    
+    func final(_ teams: string) -> String{
+        let team1 = meadowvaleFalcons
+        let team2 = zagaBulldogs
+        return "The final game will be held against..... \(team1) and \(team2)!!"
+    }
+    
+}
 
 
 
@@ -27,6 +37,7 @@
  Use the struct you created to make a new instance of your type.
 
  */
+let mississaugaSecondary.final("Mississauga Secondary")
 
 
 /*:
