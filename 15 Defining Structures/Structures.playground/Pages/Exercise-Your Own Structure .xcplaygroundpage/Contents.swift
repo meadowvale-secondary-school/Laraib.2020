@@ -16,54 +16,59 @@
  */
 // Add your own struct here:
 
-struct MSA {
-    var team: String
-    var winnings = Int
-    
-    func final(_ allTeams: MSA) -> String{
-        var winningTeams = [Array<Any>()]
-        winningTeams += allTeams
-        winningTeams.sort()
-        return "The top team in the league right now is \(winningTeams[0])!!"
-    }
-    
+struct MBATeam {
+    let team: String
+    var winnings: Int
+
 }
 
 
+func final(_ allTeams: [MBATeam]) -> String{
+    let winningTeams = allTeams.sorted { (first, second) -> Bool in
+        return first.winnings > second.winnings
+    }
+return "The top team in the league right now is \(winningTeams[0])!!"
+}
 
 /*:
  - callout(Exercise):
  Use the struct you created to make a new instance of your type.
 
  */
-var mississaugaSecondaryTomahawks = MSA(team: "MississaugaSecondary", winnings: 5)
+let teams = [
+MBATeam(team: "MississaugaSecondary", winnings: 5),
+MBATeam(team: "MeadowvaleSecondary", winnings: 11),
+MBATeam(team: "StephenLewis", winnings: 10)
+]
+final(teams)
+
 /*:
  - note: Here's an example of a placeholder type used for making a TrainingShoe:
  */
-// Placeholder type
-struct Shoelaces {
-
-}
-
-struct TrainingShoe {
-    let size: Int
-    var isTied: Bool
-    var laces: Shoelaces
-
-    func squeak() {
-        // Make a loud noise like rubber squealing on a gym floor
-    }
-
-    func warnAboutLaces() {
-        // If laces are untied, print a reminder to tie them
-    }
-}
-
-// Create an instance of the placeholder type
-let newLaces = Shoelaces()
-
-// Use the instance of the placeholder type to create an instance of your new type
-let newShoe = TrainingShoe(size: 39, isTied: true, laces: newLaces)
+//// Placeholder type
+//struct Shoelaces {
+//
+//}
+//
+//struct TrainingShoe {
+//    let size: Int
+//    var isTied: Bool
+//    var laces: Shoelaces
+//
+//    func squeak() {
+//        // Make a loud noise like rubber squealing on a gym floor
+//    }
+//
+//    func warnAboutLaces() {
+//        // If laces are untied, print a reminder to tie them
+//    }
+//}
+//
+//// Create an instance of the placeholder type
+//let newLaces = Shoelaces()
+//
+//// Use the instance of the placeholder type to create an instance of your new type
+//let newShoe = TrainingShoe(size: 39, isTied: true, laces: newLaces)
 
 
 
