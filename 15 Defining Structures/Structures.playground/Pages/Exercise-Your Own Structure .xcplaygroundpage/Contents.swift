@@ -16,19 +16,29 @@
  */
 // Add your own struct here:
 
-struct MBATeam {
+class MBATeam {
     let team: String
-    var winnings: Int
-
-}
-
-
-func final(_ allTeams: [MBATeam]) -> String{
-    let winningTeams = allTeams.sorted { (first, second) -> Bool in
-        return first.winnings > second.winnings
+    var winnings = 0
+    init(team: String) {
+        self.team = team
+        self.winnings = 0
     }
-return "The top team in the league right now is \(winningTeams[0])!!"
+    
+    func final(_ allTeams: [MBATeam]) -> String{
+        let winningTeams = allTeams.sorted { (first, second) -> Bool in
+            return first.winnings > second.winnings
+        }
+    return "The top team in the league right now is \(winningTeams[0])!!"
+    }
 }
+
+
+//func final(_ allTeams: [MBATeam]) -> String{
+//    let winningTeams = allTeams.sorted { (first, second) -> Bool in
+//        return first.winnings > second.winnings
+//    }
+//return "The top team in the league right now is \(winningTeams[0])!!"
+//}
 
 /*:
  - callout(Exercise):
@@ -36,11 +46,22 @@ return "The top team in the league right now is \(winningTeams[0])!!"
 
  */
 let teams = [
-MBATeam(team: "MississaugaSecondary", winnings: 5),
-MBATeam(team: "MeadowvaleSecondary", winnings: 11),
-MBATeam(team: "StephenLewis", winnings: 10)
+MBATeam(team: "MississaugaSecondary"),
+//MBATeam(team: "MeadowvaleSecondary", winnings: 11),
+//MBATeam(team: "StephenLewis", winnings: 10)
 ]
-final(teams)
+
+let mississauaga = MBATeam(team: "MississaugaSecondary")
+mississauaga.final(teams)
+
+let newTeam = MBATeam(team: "newGuys")
+var anotherTeam = newTeam
+anotherTeam.winnings+=11
+print(anotherTeam.winnings)
+print(newTeam.winnings)
+/*:
+ - note: Here's an example of a placeholder type used for making a TrainingShoe:
+ */
 
 /*:
  - note: Here's an example of a placeholder type used for making a TrainingShoe:
