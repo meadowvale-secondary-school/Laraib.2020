@@ -6,9 +6,8 @@
  Think of another real-world object and its properties. Make up some actions or behaviors that the object might be able to perform. Write them all in plain English first in a comment:
  */
  // Add your English-language description of the type here. Make sure to add // before each line of your comment description.
- //
- //
- //
+ // my struct is about the local basketball, where there are 5 teams, where my struct
+// holds their wins in the first quarter of the league
 
 /*:
  - callout(Exercise):
@@ -17,45 +16,80 @@
  */
 // Add your own struct here:
 
+class MBATeam {
+    let team: String
+    var winnings = 0
+    init(team: String) {
+        self.team = team
+        self.winnings = 0
+    }
+    
+    func final(_ allTeams: [MBATeam]) -> String{
+        let winningTeams = allTeams.sorted { (first, second) -> Bool in
+            return first.winnings > second.winnings
+        }
+    return "The top team in the league right now is \(winningTeams[0])!!"
+    }
+}
 
 
-
-
+//func final(_ allTeams: [MBATeam]) -> String{
+//    let winningTeams = allTeams.sorted { (first, second) -> Bool in
+//        return first.winnings > second.winnings
+//    }
+//return "The top team in the league right now is \(winningTeams[0])!!"
+//}
 
 /*:
  - callout(Exercise):
  Use the struct you created to make a new instance of your type.
 
  */
+let teams = [
+MBATeam(team: "MississaugaSecondary"),
+//MBATeam(team: "MeadowvaleSecondary", winnings: 11),
+//MBATeam(team: "StephenLewis", winnings: 10)
+]
 
+let mississauaga = MBATeam(team: "MississaugaSecondary")
+mississauaga.final(teams)
+
+let newTeam = MBATeam(team: "newGuys")
+var anotherTeam = newTeam
+anotherTeam.winnings+=11
+print(anotherTeam.winnings)
+print(newTeam.winnings)
+/*:
+ - note: Here's an example of a placeholder type used for making a TrainingShoe:
+ */
 
 /*:
  - note: Here's an example of a placeholder type used for making a TrainingShoe:
  */
-// Placeholder type
-struct Shoelaces {
-
-}
-
-struct TrainingShoe {
-    let size: Int
-    var isTied: Bool
-    var laces: Shoelaces
-
-    func squeak() {
-        // Make a loud noise like rubber squealing on a gym floor
-    }
-
-    func warnAboutLaces() {
-        // If laces are untied, print a reminder to tie them
-    }
-}
-
-// Create an instance of the placeholder type
-let newLaces = Shoelaces()
-
-// Use the instance of the placeholder type to create an instance of your new type
-let newShoe = TrainingShoe(size: 39, isTied: true, laces: newLaces)
+//// Placeholder type
+//struct Shoelaces {
+//
+//}
+//
+//struct TrainingShoe {
+//    let size: Int
+//    var isTied: Bool
+//    var laces: Shoelaces
+//
+//    func squeak() {
+//        // Make a loud noise like rubber squealing on a gym floor
+//    }
+//
+//    func warnAboutLaces() {
+//        // If laces are untied, print a reminder to tie them
+//    }
+//}
+//
+//// Create an instance of the placeholder type
+//let newLaces = Shoelaces()
+//
+//// Use the instance of the placeholder type to create an instance of your new type
+//let newShoe = TrainingShoe(size: 39, isTied: true, laces: newLaces)
 
 
 

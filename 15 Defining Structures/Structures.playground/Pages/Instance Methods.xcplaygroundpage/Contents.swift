@@ -19,8 +19,8 @@ struct Rectangle {
 //: Notice that within the body of the method definition, you can access the values of `height` and `width` of the struct without using a dot. The instance method is written as part of the struct definition, and so it can directly access the properties within the instance.
 //:
 //: Just like the methods on built-in types, the methods you define are called using the instance name, then a dot, then the name and arguments of the method:
-let rectangle = Rectangle(width: 10, height: 10)
-let otherRectangle = Rectangle(width: 10, height: 20)
+//let rectangle = Rectangle(width: 10, height: 10)
+//let otherRectangle = Rectangle(width: 10, height: 20)
 
 rectangle.isBiggerThan(otherRectangle)
 otherRectangle.isBiggerThan(rectangle)
@@ -28,9 +28,22 @@ otherRectangle.isBiggerThan(rectangle)
 
 //: - callout(Exercise): Simplify the `biggerThan` method by creating a calculated property named `area` for the rectangle struct and then using the calculated property inside the `isBiggerThan()` method.
 //:
+struct Rectangle {
+    let width: Int
+    let height: Int
+    
+    var area: Int {
+    let areaOne = width * height
+    let areaTwo = rectangle.width * rectangle.height
+    return areaOne > areaTwo
+    }
+    
+}
 
-
-
+let rectangle = Rectangle(width: 10, height: 10)
+let otherRectangle = Rectangle(width: 10, height: 20)
+rectangle.area
+otherRectangle.area
 
 
 //: Next, a summary of what you’ve learned.
