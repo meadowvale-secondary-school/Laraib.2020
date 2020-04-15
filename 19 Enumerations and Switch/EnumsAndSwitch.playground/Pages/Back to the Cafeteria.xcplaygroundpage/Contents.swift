@@ -15,6 +15,8 @@ func cookLunch(_ choice: LunchChoice) -> String {
         return "🍔"
     case .soup:
         return "🍲"
+    default:
+        return "Sorry thats not avaliable today, maybe tomorrow"
     }
 }
 

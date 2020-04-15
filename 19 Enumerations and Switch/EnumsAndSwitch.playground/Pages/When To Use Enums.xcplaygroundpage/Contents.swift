@@ -22,7 +22,13 @@
  
  - callout(Exercise): Define enums to represent the team and position options. Check on the previous pages for a refresher on the syntax.
 */
-
+enum ChurchillMeadowsSC {
+    case teamColor
+    case striker
+    case midfielders
+    case defenders
+    case goalie
+}
 
 
 

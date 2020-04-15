@@ -42,7 +42,7 @@ func cookLunch(_ choice: LunchChoice) -> String {
     }
     return "Erm... how did we get here?"
 }
-cookLunch(.soup)
+cookLunch(.pizza)
 /*: 
  You still need the final `return` statement. Otherwise the function causes an error because it can’t be sure you’ve covered all the possible cases in the if statements.
  
