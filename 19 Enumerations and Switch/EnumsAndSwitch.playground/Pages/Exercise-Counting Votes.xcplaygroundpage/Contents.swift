@@ -16,7 +16,12 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  - callout(Exercise):
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
-
+var beach = 0
+var chocolateFactory = 0
+for ClassTripDestination in tripDestinationVotes{
+    let = ClassTripDestination.beach
+    let = ClassTripDestination.chocolateFactory
+}
 
 
 /*:
