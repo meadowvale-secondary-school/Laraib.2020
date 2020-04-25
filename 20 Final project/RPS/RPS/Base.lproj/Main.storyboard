@@ -38,7 +38,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="👊"/>
                                                 <connections>
-                                                    <action selector="rock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cn7-dz-59h"/>
                                                     <action selector="rockA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRC-1U-fbe"/>
                                                 </connections>
                                             </button>
@@ -47,8 +46,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✋"/>
                                                 <connections>
-                                                    <action selector="Paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msx-MM-zAq"/>
-                                                    <action selector="paper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMq-49-8dd"/>
                                                     <action selector="paperA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0i-YY-rgt"/>
                                                 </connections>
                                             </button>
@@ -57,7 +54,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✌️"/>
                                                 <connections>
-                                                    <action selector="scissor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OxJ-l0-a8w"/>
                                                     <action selector="scissorA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztJ-I7-qy6"/>
                                                 </connections>
                                             </button>
@@ -68,9 +64,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Play Again"/>
                                         <connections>
-                                            <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alB-rB-Ku7"/>
                                             <action selector="playAgainA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deL-XN-FnL"/>
-                                            <action selector="scissor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="myz-zH-17l"/>
                                         </connections>
                                     </button>
                                 </subviews>
