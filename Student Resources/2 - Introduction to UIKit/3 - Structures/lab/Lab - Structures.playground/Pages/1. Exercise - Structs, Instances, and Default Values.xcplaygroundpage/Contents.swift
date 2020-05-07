@@ -8,7 +8,7 @@
 /*:
  Create a variable instance of `GPS` called `somePlace`. It should be initialized without supplying any arguments. Print out the latitude and longitude of `somePlace`, which should be 0.0 for both.
  */
-
+ghvgvgvgvhvgvhgvghvgh
 
 /*:
  Change `somePlace`'s latitude to 51.514004, and the longitude to 0.125226, then print the updated values.
