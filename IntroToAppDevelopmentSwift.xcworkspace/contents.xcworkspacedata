@@ -520,6 +520,27 @@
          location = "group:2 - Introduction to UIKit"
          name = "2 - Introduction to UIKit">
          <Group
+            location = "group:Apple Pie"
+            name = "Apple Pie">
+            <FileRef
+               location = "group:Apple Pie.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:AutoLayoutPractice"
+            name = "AutoLayoutPractice">
+            <FileRef
+               location = "group:AutoLayoutPractice.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Hello"
+            name = "Hello">
+            <FileRef
+               location = "group:Hello.xcodeproj">
+            </FileRef>
+         </Group>
+         <Group
             location = "group:Guided Project - Apple Pie"
             name = "Guided Project - Apple Pie">
             <FileRef
